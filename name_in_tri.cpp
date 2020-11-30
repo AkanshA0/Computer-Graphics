@@ -5,17 +5,19 @@ void drawstring()
 {
 
 //glClear(GL_COLOR_BUFFER_BIT);
-
 char d[7]={'A','k','a','n','s','h','a'};
 char *s=d;
+//glClear(GL_COLOR_BUFFER_BIT);
+
 char *c;
- glRasterPos3f(-0.1,0.4,0);
+ glRasterPos3f(-0.1,0.5,0);
  for(c=s;*c!='\0';c++)
  { glColor3f(1,0,0);
   glutBitmapCharacter(GLUT_BITMAP_9_BY_15,*c);
  }
-}
 
+
+}
 
 void triangle(void){
 
